@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=devices-width, initial-scale=1">
+  <title>WAY Receipt Email</title>
+  <link rel="stylesheet" type="text/css" href="styles/email.css" media="all" />
+</head>
+
+<body>
+    <div class = "way-logo">
+        <img src = "images/waylogo.svg" alt = "Way Logo"/>
+    </div>
+    <!---Order is ready-->
+
+    
+    <div class = "order-ready">
+        <div><h1>Your order is ready!</h1></div>
+        <div class ="order-graphic-box">
+            <div class = "order-number-box">
+                <div class = "order-number">
+                    <div><h3>Order Number:</h3></div>
+                    <div><h2>#W53</h2></div>
+                </div>
+
+                <div class="grey">Your Oishii Bowl order is ready for pickup, Cameron.</div>
+
+            </div>
+            <div class = "phone-graphic">
+                <img class = "phone-graphic" src = "images/phone.svg" alt = "Phone Graphic"/>
+            </div>
+        </div>
+
+
+
+    <!--Receipt Table
+        <div class = "receipt">
+            <div class = "row">
+                <div class = "quantity">2</div>
+                <div class = "item">Baby Watermelon</div>
+                <div class = "price">$16.00</div>
+            </div>
+            <div class = "line">
+                <hr/>
+            </div>
+            <div class = "row">
+                <div class = "quantity">1</div>
+                <div class = "item">Baby Cantelope</div>
+                <div class = "price">$8.00</div>
+            </div>
+            <div class = "line">
+                <hr/>
+            </div>
+            <div class = "row">
+                <div class = "subtitle"><span class ="red">Subtotal</span></div>
+                <div class = "subtitle-price">$24.00</div>
+            </div>
+            <div class = "row">
+                <div class = "subtitle">Tax</div>
+                <div class = "subtitle-price">$1.26</div>
+            </div>
+            <div class = "row">
+                <div class = "subtitle">Tip (0%)</div>
+                <div class = "subtitle-price">$0.00</div>
+            </div>
+            <div class = "line">
+                <hr/>
+            </div>
+            <div class = "row">
+                <div class = "total">Total (Paid with MasterCard...1234)</div>
+                <div class = "total-price">$25.26</div>
+            </div>
+        </div>
+    </div>
+
+-->
+
+
+<div class="invoice-box">
+    <table cellpadding="0" cellspacing="0">
+        
+
+        <tr class="item">
+            <td>
+                 2  <span class="quantity"> </span>     Baby Watermelon        
+            </td>
+            
+            <td class = "price" >
+                $16.00
+            </td>
+        </tr>
+        
+        <tr class="item">
+            <td>
+                1  <span class="quantity"> </span>     Baby Cantelope 
+            </td>
+            
+            <td class = "price">
+                <span class="spacing"><br> </span>   $8.00
+            </td>
+        </tr>
+        
+        <tr class="item last grey">
+            <td>
+                Subtotal
+            </td>
+            
+            <td class = "price">
+                $24.00
+            </td>
+        </tr>
+
+        <tr class="item last grey">
+            <td>
+                Tax
+            </td>
+            
+            <td class = "price">
+                $1.26
+            </td>
+        </tr>
+
+        <tr class="item last grey">
+            <td>
+                Tip (0%)
+            </td>
+            
+            <td class = "price">
+                $0.00
+            </td>
+        </tr>
+
+
+        
+        <tr class="item last total top black">
+            <td>
+                Total
+                <br>
+                <span class ="payment"> (Paid with MasterCard...1234)</span>
+            </td>
+            
+            <td >
+               $25.26
+            </td>
+        </tr>
+
+
+    </table>
+</div>
+</div>       
+    <!-- <div class = "receipt">
+            <p>
+                <i class='first'>2   Baby Watermelon</i>
+                <span></span>
+                <i class="price">$16.00</i>
+            </p>
+            <hr>
+            <p>
+                <i class='first'>1   Baby Cantelope</i>
+                <span></span>
+                <i class="price">$8.00</i>
+            </p>
+            <hr>
+          
+            <p>
+                <i class='first'>Subtotal</i>
+                <span></span>
+                <i class="price">$24.00</i>
+            </p>
+            <p>
+                <i class='first'>Tax</i>
+                <span></span>
+                <i class="price">$1.26</i>
+            </p>
+            <p>
+                <i class='first'>Tip</i>
+                <span></span>
+                <i class="price">$0.00</i>
+            </p>
+             <hr>
+
+            <p>
+            <i class='first'>Total</i>
+            <span></span>
+            <i class="price">$25.26</i>
+        </p>
+        </div>
+    </div> -->
+    
+
+    <div class = "pickup-info">
+        <span class = "bold line">Pickup your order at <span class = "waycolor"><a href = "https://www.yelp.com/biz/oishii-bowl-ithaca" target = "_blank">Oishii Bowl</a></span>:<br/></span>
+        <div><span class = "waycolor">
+           <a href = "https://www.google.com/maps/place/Oishii+Bowl/@42.4417481,-76.4872262,17z/data=!4m13!1m7!3m6!1s0x89d0818ddedd48df:0xafff1b72a27c9fa6!2s401+College+Ave,+Ithaca,+NY+14850!3b1!8m2!3d42.4417442!4d-76.4850322!3m4!1s0x89d0818ddee3c2a3:0x1b19f634dde99233!8m2!3d42.4417232!4d-76.4850666"target="_blank">
+        401 College Ave<br/>Ithaca, NY 14850</a></span>
+        </div>
+    </div>
+
+    <div class = "employee-note">
+        <p>Let an employee know you're picking up a WAY order for Cameron. (#W53)</p>
+    </div>
+ <div class = 'order-ready-paper'>
+    <!--Paperless Info-->
+    <div class ="paperless">
+        <div class = "tree-graphic">
+            <img src = "images/tree.svg" alt = "Tree Graphic"/>
+        </div>
+        <div class = "paperless-note">
+            <p>In case you were wondering, our contactless orders are entirely paperless, meaning we’re held to the highest standards for environmental protection and sustainability. In the United States, 12.4 million trees and 13 billion gallons of water are consumed each year in the creation of paper receipts, generating 1.5 billion points of waste and 4 billion pounds of CO2. <em class = 'bold'>Basically, you helped us save a tree with this order.</em></p>
+            <em><span class = "wayfont">WAY</span> to go!</em>
+        </div>
+    </div>
+    <!--Chat box-->
+    <div class = "chatbox">
+        <img src = "images/chatbox.svg" alt = "Chatbox"/>
+        <p><a href= "https://paywithway.com/contact"  target = "_blank">.Contact Us</a></p>
+    </div>
+</div>
+    <!--Footer-->
+    <div class = "footer">
+       <p><span class = "bold">a better  <span class = "wayfont">WAY</span> to pay</span></p>
+        <p>© 2020 WAY Holdings, Inc.</p>
+    </div>
+
+
+</body>
+
+</html>

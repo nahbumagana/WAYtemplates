@@ -5,7 +5,774 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=devices-width, initial-scale=1">
   <title>Email Template</title>
-  <link rel="stylesheet" type="text/css" href="styles/email.css" media="all" />
+  <style>
+
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    font-style: bold;
+    src: url("../fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url("../fonts/Nunito-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'Nunito-SemiBold';
+    font-style: bold;
+    src: url("../fonts/Nunito-SemiBold.ttf") format("truetype");
+}
+
+body{
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: "Nunito-regular";
+    background-color: #Ffffff;
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+.order-ready{
+    margin-top: 3em;
+    margin-bottom: 0em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .1em;
+    padding-bottom: 0em;
+}
+
+.order-ready-paper{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+h1{
+    font-family: "Nunito-Bold";
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2{
+    font-family: "Nunito-Bold";
+    font-size: 36px;
+}
+
+h3{
+    font-family: "Nunito-Bold";
+    font-size: 24px;
+
+
+}
+
+
+
+.order-number h3{
+    font-family: "Nunito-Bold";
+    font-size: 18px;
+    padding-left: 16.25em;
+    width: 100%;
+
+}
+
+.header img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-graphic-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.order-number-box {
+
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+
+}
+.order-ready h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    background: -webkit-linear-gradient(110deg,#125CEB,
+    #12B2EB, 
+    #89E4FD);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.order-ready img {
+    width: 120px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.order-number  {
+    padding-bottom: 1em;
+}
+
+.order-number p {
+    padding-bottom: 1em;
+    color: #868686;
+    font-family: 'Nunito-Regular';
+    margin-left: auto;
+    text-align: center;
+    margin-top: -.5em;
+    line-height: 1.4;
+    padding-bottom: 2em ;
+
+
+}
+
+
+.bag img {
+    padding-left: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 2em;
+
+}
+
+.order-number div{
+    line-height: 1em;
+}
+
+.pickup-info {
+    margin-top: 3em;
+    background-color: #FFFFFF;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3em;
+}
+
+.pickup-info div em {
+    color: #12B2EB;
+    font-weight: normal;
+}
+
+.employee-note {
+    width: 30%;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    line-height: 1.3em;
+}
+
+.paperless {
+    margin-top: 3em;
+    background-color: white;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.paperless-note {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3em;
+}
+
+.paperless-note div em {
+    color: #12B2EB;
+}
+
+.chatbox {
+    width: 100%;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.chatbox p{
+    color: #12B2EB;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    letter-spacing: 0px;
+}
+
+.receipt {
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 3em;
+
+}
+
+.row{
+    width: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    height: 1.5em;
+}
+
+.quantity {
+    margin-right: auto;
+    text-align: left;
+    width: 1.3em;
+}
+
+.item {
+    width: 210%;
+    text-align: left;
+    font-family: "Nunito-Bold";
+}
+
+.item.last {
+    width: 110%;
+    text-align: left;
+    font-family: "Nunito-Bold";
+    color: #868686;
+}
+
+.price {
+    margin-left: 10em;
+    width: 13em;
+    text-align: right;
+}
+
+.line {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line hr {
+    color: #868686;
+    font-weight: 100;
+}
+
+
+.top {
+    padding-top: 10px;
+
+}
+
+.item.last.total.top {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.price {
+    font-family: "Nunito-regular";
+}
+
+.payment {
+    font-family: "Nunito-regular";
+    font-size: .8em;
+    color: #868686;
+}
+
+
+
+
+
+.invoice-box {
+    position: relative;
+    margin-left:.5em;
+    margin-right:auto;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+.invoice-box table {
+   
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoice-box table td {
+    padding: 13px;
+    vertical-align: top;
+
+}
+
+.invoice-box table tr td:nth-child(2) {
+    text-align: right;
+
+}
+
+.invoice-box table tr.top table td {
+    padding-bottom: 20px;
+
+}
+
+.invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #000;
+    width:160%;
+
+}
+
+.invoice-box table tr.information table td {
+    padding-bottom: 40px;
+
+}
+
+.invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    width:160%;
+
+}
+
+.invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td{
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+    border-bottom: none;
+    padding: 5px;
+    padding-top: 15px;
+    width:160%;
+
+}
+
+.invoice-box table tr.total td {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.invoice-box table tr.item.love td {
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width:160%;
+
+}
+
+
+.wayfont{
+    font-family: 'Nunito-Bold'; 
+    font-weight: bold;
+    color: #12B2EB;
+}
+
+.waycolor{
+    font-weight: bold;
+    color: #12B2EB;
+}
+
+.light {
+    color: #868686;
+    width:160%;
+
+}
+
+.bold {
+    font-family: "Nunito-Regular";
+    color: #868686;
+}
+
+a {
+    color: #12B2EB;
+    text-decoration: none;
+}
+
+.subtitle {
+    width: 8em;
+    text-align: left; 
+}
+.subtitle-price {
+    margin-left: 12em;
+    width: 16em;
+    text-align: right;
+}
+
+.total{
+    width: 18em;
+    text-align: left; 
+}
+
+.total-price {
+  
+        margin-top: 3em;
+        text-align: right;
+    
+    }
+
+
+    .gradient-button {
+        margin: 2.5em -2em 2.5em 0em;
+        font-family: "Nunito-Semibold";
+        font-size: 18px;
+        padding: 5px;
+        text-align: center;
+        background-size: 200% auto;
+        color: #FFF;
+        border-radius: 300px;
+        width: 200px;
+            cursor: pointer;
+        display: inline-block;
+    }
+
+    .gradient-button-4 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
+
+    .grey{
+        color: #868686;
+        font-family: 'Nunito-Regular';
+
+    }
+.etr p{
+    font-family: "Nunito-Bold";
+    color: #000000;
+    font-size: 24px;
+    padding-bottom: 1em;
+}
+
+
+.chatbox img{
+
+    width:3%;
+    color: #12B2EB;
+    font-weight: bold;
+}
+
+.town img{
+    width:60%;
+    margin-left: 3em;
+    margin-bottom: 5em;
+    
+}
+
+.black h1{
+    color: #000000;
+}
+
+
+@media only screen and  (max-width: 600px) {
+    html, body {
+        margin-top: 3em;
+    
+        height: 100%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+    }
+    
+    body {
+        padding-top: 3em;
+    
+        display: table-cell;
+        vertical-align: middle;
+        font-family: "Nunito-regular";
+    }
+
+  
+    .header img{
+        width: 110%;
+
+display: block;
+left: .5%;
+    }
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .order-graphic-box {
+        padding-top: -15px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order-number-box {
+        text-align: center;
+        margin-right: 0em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order-ready{
+        margin-top: 0em;
+        margin-bottom: 1em;
+        background-color: white;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: .01em;
+        padding-bottom: 0em;
+
+    }
+    
+    
+    h1{
+        font-family: "Nunito-Bold";
+        font-size: 36px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .order-ready h1 {
+        text-align: center;
+     background: -webkit-linear-gradient(110deg,#125CEB,
+     #12B2EB, 
+     #89E4FD);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 46px;
+     margin-left: 0.25em;
+     width: 110%;
+
+
+    }
+
+.feedback img{
+    margin-top: 4em;
+    width: 250px;
+    margin-left: 4em;
+
+}
+
+.feedback h1{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1.5em;
+
+}
+
+
+
+h2{
+    font-family: "Nunito-Bold";
+    font-size: 24px;
+}
+
+h3{
+    font-family: "Nunito-Bold";
+    font-size: 18px;
+}
+
+
+.order-number h3{
+    font-family: "Nunito-Bold";
+    font-size: 18px;
+    padding-left: 1.25em;
+    width: 100%;
+
+}
+
+.addon p {
+    font-family: "Nunito-Regular";
+    color: #868686;
+    width: 290%;
+    margin-bottom: 0.25em ;
+}
+
+.bag img {
+    padding-left: 2.25em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 2em;
+
+}
+    
+.order-ready-paper{
+    background-color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+   
+}
+.pickup-info {
+    background-color: #FFFFFF;
+    width: 85%;
+
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3em;
+    margin-bottom: 3em;
+    margin-top: 5em;
+}
+
+.employee-note {
+    width: 50%;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    line-height: 1.3em;
+}
+
+.paperless {
+    margin-top: 3em;
+    background-color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.paperless-note {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3em;
+}
+
+.footer{
+    text-align:center;
+    display: block;
+
+}
+.feedback p {
+    padding-bottom: 1em;
+    color: #868686;
+    font-family: 'Nunito-Regular';
+    margin-left: auto;
+    text-align: center;
+    margin-top: -.5em;
+
+}
+.footer img{
+    margin: 0 auto;
+
+width: 100%;
+}
+
+.app img{
+    margin-left: .5em;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: -10em;
+justify-content: center;
+width: 100%;
+}
+
+.chatbox img{
+
+    width: 50px;
+    color: #12B2EB;
+    font-weight: bold;
+}
+
+.mleft {
+    margin-left: .75em;
+}
+
+.oleft {
+    margin-left: 1.1em;
+}
+
+.mtleft {
+    margin-left: 2em;
+}
+.center{
+    text-align: center;
+}
+
+.baby p{
+    margin: 0;
+    min-width: 300%;
+}
+
+
+.app img{
+
+    padding-bottom: 10em;
+}
+
+.town{
+    margin-left: 3em;
+    margin-bottom: 5em;
+    
+}
+
+.ftext{
+    margin-bottom: 5em;
+}
+
+.black h1{
+    color: #000000;
+}
+}
+
+/** RTL 
+.rtl {
+    direction: rtl;
+}
+**/
+.rtl table {
+    text-align: center;
+}
+
+.rtl table tr td:nth-child(2) {
+    text-align: center;
+}
+
+
+
+
+  </style>
 </head>
 
 <body>
